@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Envent: loadstart</title>
+    <style>
+        video{
+            height: 50vh;
+        }
+    </style>       
+   
+</head>
+
+<body> 
+   
+
+<!--evento de midia - pode acontecer por interação do servidor (cliente) 
+
+
+quando os dados da midia começam a ser carregada
+
+importante se eu for criar o meu proprio player (barrinha de carregamento)
+-->
+
+<video 
+
+src="https://storage.googleapis.com/hcode-public-storage/videos/AV1_trailer.mp4" controls  
+onloadeddata="debug(event)" ondurationchange="debug(event)" oncanplay="debug(event)" 
+onloadedmetadata="debug(event)" onloadstart="debug(event)">
+
+
+</video>
+
+
+    <script>
+        function debug(e) {
+            console.log('Evento: ' + e.type);
+
+        }
+    </script>
+
+</body>
+
+</html>

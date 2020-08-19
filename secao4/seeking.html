@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Envent: seeking</title>
+    <style>
+        video{
+            height: 50vh;
+        }
+    </style>       
+   
+</head>
+
+<body> 
+   
+
+<!--evento de midia - pode acontecer por interação do servidor (cliente) 
+
+
+seeked = quando o navegador ja fez a busca dos dados
+seeking = quando o navegador esta fazendo a busca dos dados
+-->
+
+
+<select onchange="setRate(event)">
+    <option>0.25</option>
+    <option>0.5</option>
+    <option>0.75</option>
+    <option selected>1</option>
+    <option>1.25</option>
+    <option>1.5</option>
+    <option>1.75</option>
+    <option>2</option>
+    <option>3</option>
+    <option>5</option>
+</select>
+
+<video 
+
+src="https://storage.googleapis.com/hcode-public-storage/videos/AV1_trailer.mp4" controls  
+ onseeked="debug(event)"
+ onseeking="debug(event)"
+>
+
+
+</video>
+
+
+    <script>
+        function debug(e) {
+            console.log('Evento: ' + e.type);
+
+        }
+      
+    </script>
+
+</body>
+
+</html>

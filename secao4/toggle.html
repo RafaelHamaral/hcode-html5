@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Envent: toggle</title>   
+</head>
+
+<body> 
+   
+
+<!--
+
+nao é evento de midia 
+
+ocorre no elemento details
+
+quando eu abro o detalhe do elemento details
+
+
+-->
+
+<details ontoggle="debug(event)">
+    <summary>Hcode</summary>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa magnam maiores fuga facilis mollitia repellat maxime porro id vitae animi, inventore reiciendis hic cupiditate perferendis. Quidem deserunt rem beatae eaque!
+
+    </p>
+</details>
+
+
+    <script>
+        function debug(e) {
+            console.log('Evento: ' + e.type);
+
+        }
+      
+    </script>
+
+</body>
+
+</html>

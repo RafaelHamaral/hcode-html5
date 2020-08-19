@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tag nav</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        header,
+        footer {
+
+            height: 10vh;
+            background-color: whitesmoke;
+
+        }
+
+        section {
+            display: flex;
+            flex-direction: row;
+        }
+
+        main {
+
+            height: 80vh;
+            background-color: #999;
+            flex: 1;
+        }
+
+        aside {
+            height: 80vh;
+            background-color: goldenrod;
+            width: 20vw;
+
+        }
+
+        ul {
+
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!--define um conjunto de links de navegacao
+    nao ha necessidade de colocar todos os links de uma pagina dentro da tag nav-->
+
+    <header>
+        <nav>
+
+            <a href="#">Home</a>
+            <a href="#">Cursos</a>
+            <a href="#">Contato</a>
+
+        </nav>
+    </header>
+
+    <section>
+     
+        <aside>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Categoria</a></li>                        
+                    <li><a href="#">Loja Virtual</a></li>
+                    <li><a href="#">Contato</a></li>
+                   
+                </ul>
+
+            </nav>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati cumque eius sunt repudiandae delectus.
+                Quae
+                illo laborum cupiditate. Totam iusto itaque id, natus quas est accusamus soluta quos cupiditate
+                reiciendis!</p>
+        </aside>
+        <main></main>
+
+    </section>
+
+    <footer>
+
+        <nav>
+            <ul>
+             <li><a href="#">Politica de Privacidade</a></li>
+             <li><a href="#">Termos de uso</a></li>
+            </ul>
+        </nav>
+
+
+
+    </footer>
+
+</body>
+
+</html>

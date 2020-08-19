@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Envent: seeked</title>
+    <style>
+        video{
+            height: 50vh;
+        }
+    </style>       
+   
+</head>
+
+<body> 
+   
+
+<!--evento de midia - pode acontecer por interação do servidor (cliente) 
+
+
+quando os dados que o navegador buscou da nossa midia. Ja foram encontradas
+-->
+
+
+<select onchange="setRate(event)">
+    <option>0.25</option>
+    <option>0.5</option>
+    <option>0.75</option>
+    <option selected>1</option>
+    <option>1.25</option>
+    <option>1.5</option>
+    <option>1.75</option>
+    <option>2</option>
+    <option>3</option>
+    <option>5</option>
+</select>
+
+<video 
+
+src="https://storage.googleapis.com/hcode-public-storage/videos/AV1_trailer.mp4" controls  
+onloadeddata="debug(event)" ondurationchange="debug(event)" oncanplay="debug(event)" 
+onloadedmetadata="debug(event)" onloadstart="debug(event)" onpause="debug(event)"
+onplay="debug(event)" onplaying="debug(event)" onprogress="debug(event)"
+onratechange="debug(event)" onseeked="debug(event)"
+
+>
+
+
+</video>
+
+
+    <script>
+        function debug(e) {
+            console.log('Evento: ' + e.type);
+
+        }
+      
+    </script>
+
+</body>
+
+</html>

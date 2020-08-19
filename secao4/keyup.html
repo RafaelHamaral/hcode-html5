@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Envent: keyup</title>
+</head>
+
+<body>
+
+    <!--
+    
+    evento de teclado: quando solto a tecla acontece o keydown quando aperto o keypress
+
+    keyup quando aperto e seguro nao acontece.. quando solto acontece o evento
+    
+    -->
+
+    <input type="text" onkeydown="debug(event)" onkeypress="debug(event)" onkeyup="debug(event)">
+
+    <script>
+        function debug(e) {
+            console.log('Evento: ' + e.type);
+
+        }
+    </script>
+
+</body>
+
+</html>

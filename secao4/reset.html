@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Envent: reset</title>
+</head>
+
+<body>
+
+    <!--
+ 
+        acontece no formulario quando eu resetar o algo no formulario
+
+-->
+    <form onreset="debug(event)">
+        <input type="text">
+        <button type="reset">Reset</button>
+    </form>
+
+    <script>
+        function debug(e) {
+            console.log('Evento: ' + e.type);
+
+        }
+    </script>
+
+</body>
+
+</html>

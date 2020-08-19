@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Envent: submit</title>
+</head>
+
+<body>
+
+    <!--
+        aconte nos formulario quando eu envio o formulario-->
+    <form onsubmit="debug(event)">
+        <input type="text">
+        <button type="submit">Enviar</button>
+    </form>    
+
+    <script>
+        function debug(e) {
+            e.preventDefault(); //cancelar o comportamento padrao do navegador (metodo preventDefault). Neste caso o navegador nao vai atualizar e o evento vai ficar visivel
+            console.log('Evento: ' + e.type);
+
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Envent: ratechange</title>
+    <style>
+        video{
+            height: 50vh;
+        }
+    </style>       
+   
+</head>
+
+<body> 
+   
+
+<!--evento de midia - pode acontecer por interação do servidor (cliente) 
+
+
+mudanca de taxa de reproducao (quando a velocidade do video é alterada para 2x etc)
+-->
+
+
+<select onchange="setRate(event)">
+    <option>0.25</option>
+    <option>0.5</option>
+    <option>0.75</option>
+    <option selected>1</option>
+    <option>1.25</option>
+    <option>1.5</option>
+    <option>1.75</option>
+    <option>2</option>
+    <option>3</option>
+    <option>5</option>
+</select>
+
+<video 
+
+src="https://storage.googleapis.com/hcode-public-storage/videos/AV1_trailer.mp4" controls  
+onloadeddata="debug(event)" ondurationchange="debug(event)" oncanplay="debug(event)" 
+onloadedmetadata="debug(event)" onloadstart="debug(event)" onpause="debug(event)"
+onplay="debug(event)" onplaying="debug(event)" onprogress="debug(event)"
+onratechange="debug(event)"
+
+>
+
+
+</video>
+
+
+    <script>
+        function debug(e) {
+            console.log('Evento: ' + e.type);
+
+        }
+        function setRate(e) {
+
+            const videoE1 = document.querySelector('video');
+            const value = e.target.value;
+
+            videoE1.playbackRate = parseFloat(value);
+
+
+            console.log(e.target.value);
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Envent: mouseout</title>
+    <style>
+        div {
+            width: 50vw;
+            height: 50vw;
+            background-color: brown;
+        }
+    </style>
+</head>
+
+<body onclick="debug(event)" onmouseout="debug(event)"> <!--acontece se eu clicar no body da pagina-->
+
+    <!--
+    
+    evento de teclado: aperto o mouse
+    
+    -->
+
+    <div onmousemove="debug(event)"></div>
+
+<button type="button" ondblclick="debug(event)" onmousedown="debug(event)">mousedown</button>
+    <script>
+        function debug(e) {
+            console.log('Evento: ' + e.type);
+
+        }
+    </script>
+
+</body>
+
+</html>

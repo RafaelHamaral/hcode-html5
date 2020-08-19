@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Envent: offline e online</title>
+</head>
+<body ononline="debug(event)" onoffline="debug(event)"> 
+
+    <!--evento de janela
+    
+        captura uma acao que acontece na janela e nao do meu computador como um todo, mesmo com internet se eu desativar a conexao da janela ele vai disparar o evento
+    
+        aba de network mudar para online ou offline e o evento sera disparado.  (para simular), quando estiver sem internet vai disparar tbm
+
+    -->
+
+
+    <script>
+
+        function debug(e) {
+            console.log('Evento: ' + e.type);
+            alert('Evento: ' + e.type);
+        }
+
+    </script>
+    
+</body>
+</html>

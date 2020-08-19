@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Envent: canplaythrough</title>
+    <style>
+        video{
+            height: 80vh;
+        }
+    </style>       
+   
+</head>
+
+<body> 
+   
+
+<!--evento de midia - pode acontecer por interação do servidor (cliente) 
+
+pode ser reproduzido 
+
+acontece quando o nosso arquivo de midia ja tem dados suficiente para tocar o video até o final sem salvar -->
+
+<video 
+
+src="https://storage.googleapis.com/hcode-public-storage/videos/AV1_trailer.mp4"
+
+controls
+
+oncanplaythrough="debug(event)"
+oncanplay="debug(event)"
+
+>
+
+</video>
+
+
+    <script>
+        function debug(e) {
+            console.log('Evento: ' + e.type);
+
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tag output</title>
+</head>
+<body>
+    <!--usada para mostrar o resultado de um calculo
+
+        for - relacao e resultado e os elementos usados parao calculo - id do elemento
+        form - define qual formulario que esse campo pertence - id do formulario
+        name - define o nome do elemento - texo 
+-->
+
+<form oninput="c.value = parseInt (a.value) + parseInt (b.value)")><!--sempre que tme um evento dentro da entrada do formulario esse evento é chamado-->
+    <input type="range" id="a" value="0" min="0" max="10">
+    +
+    <input type="number" id="b" value="0">
+    =
+    <output name="c" for="a b"></output>
+</form>
+
+
+</body>
+</html>

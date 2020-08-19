@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Envent: copy</title>       
+    <style>
+            body {
+
+                height: 200vh; /*pra gerar a barra de rolagem*/
+
+            }
+    </style>
+</head>
+
+<body oncopy="debug(event)"> 
+   
+
+<!--evento quando copio algo-->
+
+<p oncopy="debug(event)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum non id fuga, sit repudiandae voluptas eum reprehenderit enim blanditiis at excepturi aut quod nesciunt repellat quis odit facere? Illum, minus.</p>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum non id fuga, sit repudiandae voluptas eum reprehenderit enim blanditiis at excepturi aut quod nesciunt repellat quis odit facere? Illum, minus.</p>
+
+
+
+    <script>
+        function debug(e) {
+            console.log('Evento: ' + e.type);
+
+        }
+    </script>
+
+</body>
+
+</html>

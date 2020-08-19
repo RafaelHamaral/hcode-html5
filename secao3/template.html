@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tag template</title>
+</head>
+<body>
+    <!--tag usada para definir um conteiner para o codigo html que deseja renderizar posteriormente-->
+
+    <template id="tpl-1">
+        <li>{{name}}</li>
+    </template>
+
+    <ul>
+        
+    </ul>
+
+<button type="button">add</button>
+
+<script>
+
+    const btn = document.querySelector('button'); //constante procurando o botao
+    const template = document.querySelector('#tpl-1');
+    const ul = document.querySelector('ul'); //onde vou colocar o meu conteudo do template
+
+    btn.addEventListener('click', e => { //funcao que recebe um evento de clicar
+
+        ul.append(template.content.cloneNode(true)); //copia do meu template e nao perde o conteudo do template
+
+
+
+    })
+
+</script>
+
+
+
+</body>
+</html>

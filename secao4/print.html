@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Envent: afterprint e beforeprint</title>
+</head>
+<body onbeforeprint="debug(event)" onafterprint="debug(event)">
+
+<!--antes de ser exibida a tela de dialogo (crtl+p) para impressao aparece o alerta antes de depois da impressao-->
+
+    <script>
+
+        function debug(e) {
+            alert('Evento: ' + e.type);
+        }
+
+    </script>
+    
+</body>
+</html>

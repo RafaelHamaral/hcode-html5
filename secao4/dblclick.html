@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Envent: dblclick</title>
+</head>
+
+<body onclick="debug(event)"> <!--acontece se eu clicar no body da pagina-->
+
+    <!--
+    
+    evento de teclado: O evento acontece  quando eu clico em elementos da pagina.
+    
+    -->
+
+<button type="button" ondblclick="debug(event)">dbclick</button>   <!--acontece se eu clicar no botao-->
+    <script>
+        function debug(e) {
+            e.stopPropagation(); //cancelar a propagação de eventos 
+            console.log('Evento: ' + e.type);
+
+        }
+    </script>
+
+</body>
+
+</html>

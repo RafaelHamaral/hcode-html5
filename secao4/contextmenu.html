@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Envent: contextmenu</title>
+</head>
+<body> 
+
+    <!--
+acontece quando abre o meno de contexto. que tem a ver com o menu que ele esta clicando 
+
+no input clicar com o botao direito do mouse
+
+
+-->
+    <input type="text" oncontextmenu="debug(event)"> 
+    <script>
+
+        function debug(e) {
+            console.log('Evento: ' + e.type);
+            
+
+        }
+
+    </script>
+    
+</body>
+</html>

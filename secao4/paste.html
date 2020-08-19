@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Envent: paste</title>       
+   
+</head>
+
+<body> 
+   
+
+<!--evento quando copio algo-->
+
+<input type="text" onpaste="debug(event)">
+
+<p oncopy="debug(event)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum non id fuga, sit repudiandae voluptas eum reprehenderit enim blanditiis at excepturi aut quod nesciunt repellat quis odit facere? Illum, minus.</p>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum non id fuga, sit repudiandae voluptas eum reprehenderit enim blanditiis at excepturi aut quod nesciunt repellat quis odit facere? Illum, minus.</p>
+
+
+
+    <script>
+        function debug(e) {
+            console.log('Evento: ' + e.type);
+
+        }
+    </script>
+
+</body>
+
+</html>

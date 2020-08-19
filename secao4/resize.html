@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Envent: resize</title>
+</head>
+<body onresize="debug(event)"> 
+
+    <!--
+se eu redimensionar a janela do navegador ele aparece esse evento
+    -->
+
+
+    <script>
+
+        function debug(e) {
+            console.log('Evento: ' + e.type);
+        }
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>    
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dropzone</title>
+
+        <!--Area pra onde eu posso arrastar o meu elemento-->
+    <style>
+        .caixa {
+            width: 100px;
+            height: 100px;
+            background-color: chocolate;
+        }
+        .drop {
+            width: 200px;
+            height: 200px;
+            border: crimson 1px solid;
+        }
+    </style>  
+    </head>
+
+    <body>
+
+        <div id="c1" class="caixa" draggable="true"></div>
+        <div id="c2" class="caixa" draggable="true"></div>
+
+        <div class="drop" dropzone="copy"></div>
+        
+        <script>
+            const caixas = document.querySelectorAll('.caixa'); //constante caixa selecionando o .caixa
+            const dropZone = document.querySelector('[dropzone]');//o elemento pra onde vou arrastar o elemento
+
+            caixas.forEach(caixaEL => { //foreach - passar cada uma das caixasSS
+
+
+                caixaEL.addEventListener('dragstart', e => {  //aplicando um evento chamado dragstart
+
+                    e.dataTransfer.setData('text', e.target.id);//propriedade data transfer
+                    console.log(e.target.id); //alvo do evento (target.id) - saber quem eu to arrastando
+                });
+            });
+
+            dropZone.addEventListener('dragover', e =>{//quando algum elemento estiver passando por cima da area
+                e.preventDefault();//nesse caso cancela o padrao (por padrao do navegador ele cancela o evento)
+            });
+
+            dropZone.addEventListener('drop', e =>{
+
+                //console.log('drop!!!') - testando (Toda vez que eu colocar o elemento dentro do dropzone ele vai avisar no console)
+
+                const id= e.dataTransfer.getData('Text');//pega a data do tipo texto (dado texto)
+
+                const element = document.getElementById(id);//busco o elemento pelo id
+
+                e.target.appendChild(element); //adiciono um filho no evendo append child(filho)
+
+            });
+
+
+        </script>
+    </body>
+</html>

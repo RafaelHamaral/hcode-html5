@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ID</title>
+    <style>
+        #box-1 {
+            width: 150px;
+            height: 150px;
+            background-color: darkorange;
+        }
+        #box-2 {
+            width: 150px;
+            height: 150px;
+            background-color: darkcyan;
+        }
+    </style>
+</head>
+<!--Identificar um elemento-->
+
+<body>
+    <!--REGRA: deve ser unico = apenas 1 id na minha pagina
+        
+        *CASO eu queira utilizar o mesmo id, "ai ja nao é id - é class" (utilizado justamente com esse proposito de utilizar o mesmo identificador)
+    -->
+
+    <div id="box-1"></div>
+
+    <div id="box-2"></div>
+
+
+    <script>
+
+        //utilizando o javascrip pra ver oque esta aparecendo no meu console
+        //busca o elemento pelo id (get ou query)
+        const box1 = document.getElementById('box-1');
+        console.log(box1);
+
+        const box2 = document.querySelector('#box-2');
+        console.log(box2);
+
+    </script>
+
+
+</body>
+
+</html>
