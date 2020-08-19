@@ -21,7 +21,7 @@ data.forEach(task => {
 
     let li = document.createElement('li');
 
-    //recebe o template do html
+    //recebe o template do html  - (o que estava dentro do ul)
     li.innerHTML = `
     
     <input type="checkbox" id="task-${task.id}">
@@ -30,7 +30,31 @@ data.forEach(task => {
 
     `; 
 
+    li.querySelector('input').addEventListener("change" , e => {
+
+        if (e.target.checked) {
+
+            li.classList.add('complete');
+
+
+        } else {
+            li.classList.remove('complete');
+        }
+
+
+    })
+
     document.querySelector('.todo').append(li);
+
+
+});
+
+document.querySelector('#new-task').addEventListener('keyup' , e => {
+
+    if (e.key === 'Enter'){
+
+        console.log(e.target.value);
+    }
 
 
 });
