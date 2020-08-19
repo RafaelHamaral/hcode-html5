@@ -1,20 +1,11 @@
 //Criando um array
-let data = [{
-    id: 1,
-    title: "Estudar HTML"
-}, {
+let data = [];
 
-    id: 2,
-    title: "Estudar CSS"
-}, {
 
-    id:3,
-    title: "Estudar JavaScript"
-}, {
 
-    id:4,
-    title: "Estudar PHP"
-}];
+function renderTodo() {
+
+    document.querySelector('.todo').innerHTML = '';
 
 
 data.forEach(task => {
@@ -49,18 +40,30 @@ data.forEach(task => {
 
 });
 
+}
+
 document.querySelector('#new-task').addEventListener('keyup' , e => {
 
     if (e.key === 'Enter'){
 
-        console.log(e.target.value);
+        data.push({
+
+            id: data.length+1,
+            title: e.target.value
+       });
+
+       e.target.value = "";
+
+
+       renderTodo();
+
     }
 
 
 });
 
 
-
+renderTodo();
 
 
 
