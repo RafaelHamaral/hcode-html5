@@ -17,6 +17,7 @@ data.forEach(task => {
     
     <input type="checkbox" id="task-${task.id}">
     <label for="task-${task.id}">${task.title}</label>
+    <button type="button">x</button>
     
 
     `; 
@@ -33,7 +34,14 @@ data.forEach(task => {
         }
 
 
-    })
+    });
+
+    li.querySelector('button').addEventListener('click' , e => {
+
+        console.log(e.target.parentNode.querySelector('input').id.split('-')[1]);
+
+
+    });
 
     document.querySelector('.todo').append(li);
 
