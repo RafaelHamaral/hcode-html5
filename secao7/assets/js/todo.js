@@ -44,10 +44,16 @@ data.forEach(task => {
        let id = input.id;
        let idArray = id.split('-');
        let todoId = idArray[1];
+       let title = li.querySelector('label').innerText; //nao busca as tags só os texto (se tiver texto)
+
+       if (confirm(`Deseja realmente excluir a tarefa ${title}?`)){
+
 
         data = data.filter(task => task.id !== parseInt(todoId));
 
         renderTodo();
+
+       }
 
     });
 
