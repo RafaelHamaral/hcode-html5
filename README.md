@@ -8,12 +8,12 @@
   - secao 6 - Projeto Tabuada
   - secao 7 - Projeto Lista de tarefas - To do
   - secao 8 - Projeto Site Responsivo
+  
+### sites utilizados para css e para tela responsiva:
 
+* https://www.colorzilla.com/gradient-editor/
+* https://fontawesome.com/start/
 
-https://www.colorzilla.com/gradient-editor/
+---
 
-&nbsp;
-https://fontawesome.com/start/
-
-
-Certificado do curso: [meu certificado](https://udemy-certificate.s3.amazonaws.com/pdf/UC-cae75d24-c11e-4afd-a926-13a70547f98d.pdf)
+Certificado do curso: [certificado em pdf](https://udemy-certificate.s3.amazonaws.com/pdf/UC-cae75d24-c11e-4afd-a926-13a70547f98d.pdf)
