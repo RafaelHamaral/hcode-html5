@@ -8,3 +8,7 @@
   - secao 6 - Projeto Tabuada
   - secao 7 - Projeto Lista de tarefas - To do
   - secao 8 - Projeto Site Responsivo
+
+
+https://www.colorzilla.com/gradient-editor/
+https://fontawesome.com/start/
