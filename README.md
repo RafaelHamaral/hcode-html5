@@ -11,4 +11,9 @@
 
 
 https://www.colorzilla.com/gradient-editor/
+
+&nbsp;
 https://fontawesome.com/start/
+
+
+Certificado do curso: [meu certificado](https://udemy-certificate.s3.amazonaws.com/pdf/UC-cae75d24-c11e-4afd-a926-13a70547f98d.pdf)
